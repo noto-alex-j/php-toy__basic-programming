@@ -23,7 +23,7 @@ else{
 echo "\n-------------------------------------------------------------------\n";
 
 echo "\nTesting that 3 is greater than 5. Should return false.\n";
-if (isGreaterThanFive(3) == true) {
+if (isGreaterThanFive(3) == false) {
   echo "Success!";
 }
 else{

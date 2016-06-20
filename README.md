@@ -10,9 +10,9 @@ This exercise includes a few basic programming questions. Solve them in any orde
 
 ### Getting Started
 
-After forking this repo and opening it in your development environment (e.g. Cloud9), run `bin/setup`. This will install any software that this exercise depends upon.
+Fork this repo and open it in your development environment (e.g. Cloud9, or on your computer if it's been set up for development). That's about it for setup.
 
-Your work belongs in the files in the **lib/** directory.
+Your work belongs in the files in the **lib/** directory. To run a file, simply execute `php path/to/file.php` in a terminal. E.g. `php lib/1_is_greater_than_five.php` will run that file.
 
 Do not change the name of the functions. Simply alter the body of the function to get the tests passing.
 
