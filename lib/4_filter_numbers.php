@@ -14,7 +14,7 @@ function filterNumbers($arr) {
 		}
 	}
 	$arr = array_diff($arr, $big);
-	return array_multisort($arr);
+	return sort($arr);
 }
 
 
