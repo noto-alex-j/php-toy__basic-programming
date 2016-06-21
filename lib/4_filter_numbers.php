@@ -7,14 +7,13 @@
 // Run `bin/check` from the command line to execute the automated tests.
 
 function filterNumbers($arr) {
-	$big = array();
+	$little = array();
 	foreach ($arr as $x) {
-		if ($x >= 10) {
-			array_push($big, $x);
+		if ($x < 10) {
+			array_push($little, $x);
 		}
 	}
-	$arr = array_diff($arr, $big);
-	return sort($arr);
+	return $little;
 }
 
 
@@ -30,7 +29,16 @@ else{
 echo "\n-------------------------------------------------------------------\n";
 
 echo "\nTesting whether array contains elements equal to or larger than 10.\n";
-if (filterNumbers(array(11,16,35,2)) == array(2)) {
+if (filterNumbers(array(3,11,16,5,35,2)) == array(3,5,2)) {
+  echo "Success!";
+}
+else{
+  echo "Failed!";
+}
+echo "\n-------------------------------------------------------------------\n";
+
+echo "\nTesting whether array contains elements equal to or larger than 10.\n";
+if (filterNumbers(array(10,23,106,2)) == array(2)) {
   echo "Success!";
 }
 else{
